@@ -1,4 +1,16 @@
 About
 -----
 
-..
+Forked and Patched from the original msgpack C sharp libaries so the ObjectPacker 
+supports more features: 
+
+* able to encode/decode enums correctly
+* able to encode/decode Dictionary<string, Y> correctly (could change)
+** this is more inline with a JSON object
+** the value Y can be any type that msgpack can encode
+
+Motivation
+==========
+
+1. A fast working C# binary serializer that works in Unity3D
+1. Able to encode dynamic Dictionary<string, Y> types correctly
