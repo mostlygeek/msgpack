@@ -97,6 +97,11 @@ namespace MsgPack
 				return;
 			}
 
+            if (t.IsEnum) {
+                writer.Write((int) o);
+                return;
+            }
+
 			ReflectionCacheEntry entry = ReflectionCache.Lookup (t);
 			writer.WriteMapHeader (entry.FieldMap.Count);
 			foreach (KeyValuePair<string, FieldInfo> pair in entry.FieldMap) {
@@ -192,6 +197,14 @@ namespace MsgPack
 					ary.SetValue (Unpack (reader, et), i);
 				return ary;
 			}
+
+            if (t.IsEnum) {
+                if (!reader.Read()) {
+                    throw new FormatException();
+                }
+
+                return Enum.ToObject(t, reader.ValueSigned);
+            }
 
 			if (!reader.Read ())
 				throw new FormatException ();

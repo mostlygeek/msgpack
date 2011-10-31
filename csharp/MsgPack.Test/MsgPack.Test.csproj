@@ -26,6 +26,7 @@
     <OutputType>Exe</OutputType>
     <RootNamespace>MsgPack.Test</RootNamespace>
     <AssemblyName>MsgPack.Test</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
