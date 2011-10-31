@@ -34,6 +34,13 @@ namespace MsgPack.Benchmark
             Console.WriteLine(string.Format("{0} unpacks took {1}s, {2}/second, ~{3}ms each",
                                             i, done.TotalSeconds,
                                             Math.Round(i/done.TotalSeconds), done.TotalMilliseconds/i));
+
+            /**
+             * Output from my C2D Macbook Pro: 2.66ghz
+             *
+             * 100000 packs took 2.523064s, 39634/second, ~0.02523064ms each
+             * 100000 unpacks took 2.916535s, 34287/second, ~0.02916535ms each
+             */
         }
     }
 
