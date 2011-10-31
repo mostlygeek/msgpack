@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MsgPack", "MsgPack\MsgPack.csproj", "{E1809531-EC2A-4EA6-B0E8-CC815EDFAA2F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MsgPack.Test", "MsgPack.Test/MsgPack.Test.csproj", "{CE24167B-8F0A-4670-BD1E-3C283311E86B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MsgPack.Test", "MsgPack.Test\MsgPack.Test.csproj", "{ADF55F05-DEBF-4C28-90C3-BA0C27D06723}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MsgPack.Benchmark", "MsgPack.Benchmark\MsgPack.Benchmark.csproj", "{643B3108-9A4D-4501-B154-4BD2D4F1D89C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,13 +13,20 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{643B3108-9A4D-4501-B154-4BD2D4F1D89C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{643B3108-9A4D-4501-B154-4BD2D4F1D89C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{643B3108-9A4D-4501-B154-4BD2D4F1D89C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{643B3108-9A4D-4501-B154-4BD2D4F1D89C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ADF55F05-DEBF-4C28-90C3-BA0C27D06723}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ADF55F05-DEBF-4C28-90C3-BA0C27D06723}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ADF55F05-DEBF-4C28-90C3-BA0C27D06723}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E1809531-EC2A-4EA6-B0E8-CC815EDFAA2F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{E1809531-EC2A-4EA6-B0E8-CC815EDFAA2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E1809531-EC2A-4EA6-B0E8-CC815EDFAA2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E1809531-EC2A-4EA6-B0E8-CC815EDFAA2F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{CE24167B-8F0A-4670-BD1E-3C283311E86B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{CE24167B-8F0A-4670-BD1E-3C283311E86B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{CE24167B-8F0A-4670-BD1E-3C283311E86B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = MsgPack\MsgPack.csproj
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
